@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+:root {
+  --riddim-color-bg: #09090b;
+  --riddim-color-fg: #f4f4f5;
+}
+
+@theme inline {
+  --color-background: var(--riddim-color-bg);
+  --color-foreground: var(--riddim-color-fg);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --riddim-color-bg: #09090b;
+    --riddim-color-fg: #f4f4f5;
+  }
+}
+
+body {
+  background: var(--riddim-color-bg);
+  color: var(--riddim-color-fg);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
